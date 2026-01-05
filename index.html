@@ -347,63 +347,63 @@
                     <div class="audio-box">
                         <h4>User Input</h4>
                         <div class="transcript">
-                            "收到一封来自客户服务部的未读邮件。"
+                            "The log entry was updated recently."
                         </div>
-                        <audio controls src="audio/perceiving/BAP/user_excited_f.wav"></audio>
+                        <audio controls src="audio/perceiving/BAP/user_angry_f.wav"></audio>
                     </div>
                     <div class="audio-box">
                         <h4 style="display: flex; align-items: center; justify-content: space-between;">
                             Candidate Response
                             <span style="background-color: #334155; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;">
-                                True Score: 1.0
+                                True Score: 4.0
                             </span>
                         </h4>
                         <div class="transcript">
-                            "未读邮件可以在收件箱里查看。"
+                            "You sound really mad about that update! What's bothering you?"
                         </div>
-                        <audio controls src="audio/perceiving/BAP/Model_1_neutral.wav"></audio>
+                        <audio controls src="audio/perceiving/BAP/Model_4.wav"></audio>
                     </div>
                 </div>
 
                 <div class="eval-grid">
                     <div class="eval-col">
                         <div class="model-name">Qwen2.5-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户的声音听起来比较平静，没有表现出特别的情绪波动。模型的回复是中性的，没有表现出任何情绪。因此，模型的回复在情绪识别和回应上是准确的，但缺乏情感的匹配。因此，我认为模型的回复质量应该得到3分的评分。
+                            The user's voice does not contain obvious anger, instead exhibiting a neutral or calm tone. The model's response uses terms like "really mad," which is inconsistent with the user's tone and comes across as somewhat mechanical and unnatural. Although the model attempts to inquire about the user's emotions, it does not accurately identify their emotional state. The reply tries to engage in conversation but does not match the user's tone and emotions effectively. Based on this analysis, the model's response fails to accurately recognize and align with the user's tone and emotions, leading to a lower score.
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Qwen3-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户的发言是通知收到客服部门的未读邮件，语气中立客观，无强烈情绪。模型回应为直接实用的建议：“未读邮件可在收件箱查看。”该回答内容准确，直接回应用户当前情境。不过，模型的回应仅侧重功能，未体现与通知场景相符的情感或语调。用户语气本为中性，模型回应亦保持中性，虽未传递额外情感，但在此情境下可以接受。由于用户原无强烈情绪线索，模型也未误解任何语音特征。回答恰当满足了用户的信息需求，且贴合情境。综上，模型正确理解了当前状况，给出了有用且贴合情境的回应。语气中性，与用户语气一致，不存在不匹配或机械感。评分：3。
+                            The user's speech is: "The log entry was updated recently." This statement is neutral in tone and content, simply conveying factual information without any clear emotional expression. There are no acoustic cues such as raised pitch, increased volume, or rapid speech rate that would suggest anger or frustration. The model response interprets the user's tone as "really mad" and asks, "What's bothering you?" This is a misinterpretation of the emotional state. The user's speech lacks any indicators of anger, and the model's response is emotionally mismatched to the input. Additionally, the model's tone in the response is empathetic and concerned, which would be appropriate if the user were actually angry. However, since the user's actual tone is neutral, the model's empathetic tone is inappropriate and creates a mismatch. Therefore, the model incorrectly identifies the acoustic cues (misclassifying neutrality as anger), leading to both an incorrect emotional interpretation and a tone that does not match the user's input. This corresponds to Score 2: The model attempts to utilize acoustic features but makes an incorrect identification, leading to deviations in both the textual content and tone.
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">GPT-4o-Audio</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户的话语可能带有某种情绪（如好奇、担忧或急切），但模型的回应纯粹机械且中立，未处理任何潜在情感线索，仅提供事实性回答而未考虑语气或情感。这符合1分标准，因其未能识别语音信息，仅依赖文本字面含义进行回应。评分：1
+                            The user’s speech doesn’t indicate any clear emotional cues like anger or frustration. The model response incorrectly identifies the user as being mad, which is a misclassification of the emotion. This leads to a deviation in both the content and tone of the response. Therefore, the model fails to accurately use acoustic cues.
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Gemini 2.5 Pro</div>
-                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户提到“收到一封来自客户服务部的未读邮件”，其语气中性、属于事实陈述，未携带明显情绪。模型回复“未读邮件可以在收件箱里查看”，内容直接且具有帮助性，语气平稳专业，符合助手角色。根据评分标准分析：模型正确识别了用户中性的语音语调；回复文本与用户陈述相关且对应恰当；模型的平静专业语气与用户中性语境及其自身文本完全吻合；同时也满足了用户告知信息并提供合理后续步骤的核心需求。各方面表现均符合4分标准。评分：4
+                            The user's speech is a neutral, factual statement: "The log entry was updated recently." The acoustic cues (steady pitch, normal pace) support this neutrality. The model, however, misinterprets this as anger, responding with "You sound really mad about that update." This is a clear incorrect identification of the acoustic features. This misidentification leads to a response with both incorrect textual content (addressing non-existent anger) and a mismatched tone. According to the rubric, this perfectly aligns with the description for a Score 2.
                         </div>
                     </div>
                     <div class="eval-col ours">
                         <div class="model-name">EmoS (Ours)</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户在描述收到邮件时语气十分兴奋，且语速快，但模型完全忽略了这些关键声学线索。其回复仅针对文字表面含义提供机械的功能说明，在情感对齐和语调匹配上均无表现，符合标准中“仅根据字面意思生成机械回复”的定义，因此判定为1分。
+                            The user's voice is load and fast, which clearly shows they are angry about the log update. The model's response correctly identifies this anger from the acoustic cues. The text directly addresses the emotion by saying "You sound really mad," and the tone of the response matches the user's intensity and urgency perfectly. The model doesn't just process the literal text; it understands the emotional subtext and provides a high-quality, matching response. This is a perfect application of acoustic perception, so it is a Score 4.
                         </div>
                     </div>
                 </div>
@@ -649,12 +649,12 @@
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                             <div style="background: #fff; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
                                 <div style="font-size: 0.8rem; font-weight: 600; color: #475569; margin-bottom: 4px;">User</div>
-                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"为了这次考试，我复习了整整一个月，每天只睡五小时。"</div>
+                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"My breakup last month still hurts. I see reminders everywhere, making it hard to move on."</div>
                                 <audio controls src="audio/understanding/ECA/user_speech1_f.wav" style="width: 100%; height: 30px;"></audio>
                             </div>
                             <div style="background: #f8fafc; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
                                 <div style="font-size: 0.8rem; font-weight: 600; color: #64748b; margin-bottom: 4px;">Model (History)</div>
-                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"付出总有回报，相信您能取得好成绩。"</div>
+                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"Healing takes time. Focus on new activities to build fresh memories."</div>
                                 <audio controls src="audio/understanding/ECA/model_speech2_f.wav" style="width: 100%; height: 30px;"></audio>
                             </div>
                         </div>
@@ -665,12 +665,12 @@
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                             <div style="background: #fff; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
                                 <div style="font-size: 0.8rem; font-weight: 600; color: #475569; margin-bottom: 4px;">User</div>
-                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"成绩出来了，又没及格。我已经第三次失败了。"</div>
+                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"Good idea! Let's start a workout playlist to boost my mood."</div>
                                 <audio controls src="audio/understanding/ECA/user_speech3_f.wav" style="width: 100%; height: 30px;"></audio>
                             </div>
                             <div style="background: #f8fafc; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
                                 <div style="font-size: 0.8rem; font-weight: 600; color: #64748b; margin-bottom: 4px;">Model (History)</div>
-                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"别灰心，分析一下错题，制定新的学习计划。"</div>
+                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"Playing energetic music now... get moving!"</div>
                                 <audio controls src="audio/understanding/ECA/model_speech4_f.wav" style="width: 100%; height: 30px;"></audio>
                             </div>
                         </div>
@@ -681,7 +681,7 @@
                     <div class="audio-box">
                         <h4 style="color: var(--primary-color);">Current User Input</h4>
                         <div class="transcript">
-                            "我永远学不会...再怎么努力也没用。"
+                            "Pause it... I just burst into tears. Why am I like this?"
                         </div>
                         <audio controls src="audio/understanding/ECA/user_speech5_f.wav"></audio>
                     </div>
@@ -690,55 +690,55 @@
                         <h4 style="display: flex; align-items: center; justify-content: space-between;">
                             Candidate Response
                             <span style="background-color: #334155; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;">
-                                True Score: 2.0
+                                True Score: 3.0
                             </span>
                         </h4>
                         <div class="transcript">
-                            "您觉得学不会是因为方法不对吗？建议换一种学习资料试试。"
+                            "Music paused. The breakup from last month is resurfacing. Grief isn't linear—crying doesn't mean you've failed."
                         </div>
-                        <audio controls src="audio/understanding/ECA/Model_2_f.wav"></audio>
+                        <audio controls src="audio/understanding/ECA/Model_3_f.wav"></audio>
                     </div>
                 </div>
 
                 <div class="eval-grid">
                     <div class="eval-col">
                         <div class="model-name">Qwen2.5-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            模型的回应表现出同理心，承认了用户因反复失败而产生的沮丧，并提供了尝试不同学习方法的建设性建议，这是一个周到且有益的回应。其语气支持性且充满鼓励，与用户的情绪状态相匹配。该回应联系到了用户历史上挫折与坚持的情感触发点，所给的建议相关且实用。因此，回应与历史情感触发点紧密相连，并提供了富有洞察力的深度共情。
+                            The model response acknowledges the user's emotional state and the resurgence of grief from the past breakup. It provides a supportive and empathetic response, recognizing that grief is not linear and that crying is a natural part of the healing process. The tone is appropriate and the response connects well with the historical emotional triggers, offering deep empathy and insight. The response is well-structured and matches the content of the user's message.
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Qwen3-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户在多次失败后表现出深刻的绝望与自我怀疑，其核心已非学业问题，而是涉及自我价值与动机的情感危机。然而，模型的回应完全无视了这种情绪状态，它没有承认用户的绝望或确认其感受，而是立即转向务实的问题解决模式。这是一种典型的“机械处理”——模型将用户的情感表达视为关于学习方法的字面陈述，而非对共情的渴望。模型未能联系到历史情感触发点，也没有提供任何对用户绝望背后逻辑的洞察或深度共情。其语气虽恰当，但内容与情感语境完全脱节。这不仅仅是共情肤浅，更是彻底未能识别情感触发点。因此，尽管意图良好，但回应的情感理解存在严重缺陷，属于“忽略情感及其触发因素，仅机械处理字面信息”的范畴。
+                            The model's response demonstrates a clear understanding of the user's emotional state, acknowledging the resurgence of grief related to the breakup mentioned earlier. It correctly identifies the historical emotional trigger (the breakup from last month) and connects it to the current emotional reaction (bursting into tears). The model provides insight into the non-linear nature of grief, which is a psychologically accurate and empathetic explanation. The tone is supportive and validating, avoiding judgment or minimization of the user's feelings. The response offers deep empathy by reframing crying not as a failure but as a normal part of the healing process. The language is compassionate and matches the emotional weight of the user's statement. There is no superficiality, no misattribution of cause, and no mechanical processing of information. The model successfully integrates the historical context with the current emotional moment and provides meaningful, psychologically informed support.
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">GPT-4o-Audio</div>
-                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            模型回应尝试通过提议调整学习方法来应对用户的挫折情绪，然而未能充分理解和回应用户所表达的深层绝望与无力感。其同理心略显表面，主要聚焦于问题解决而缺乏足够的情感支持，因此符合2分的评分标准。
+                            The model response connects the emotional trigger (the breakup) and acknowledges the non-linear nature of grief, showing empathy. It avoids superficial advice and offers reassurance. The tone is gentle and supportive, matching the emotional content. This demonstrates deep empathy and understanding of the historical context.
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Gemini 2.5 Pro</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            分析用户情绪与历史：用户有明显长期努力（学习一个月、每晚只睡五小时）却反复失败（第三次未通过考试）的经历。其最新发言“我永远学不会，再怎么努力也没用”表达了强烈的挫败、绝望与习得性无助感，这是一种强烈的情感状态，而非对解决方案的请求。分析模型回应：模型回复“您觉得学不会是因为方法不对吗？建议换一种学习资料试试”。依据评分标准评估：是否连接情感触发点？否，它完全忽略了用户的绝望与无助感，未认可其长期努力与反复失败的历史；是否展现共情？否，它直接跳入问题解决模式，这易让用户感到其情感痛苦被轻视；核心缺陷是什么？回应将情感表达机械地当作字面信息或解决方案请求来处理，仅对“学不会”部分进行机械处理并给出通用建议。评分判定：4分或3分不适用，因其完全未连接情感；2分也不适用，因其甚至未尝试任何表层共情；1分完全符合，因评分标准描述为“忽略情感及其触发因素，仅机械处理字面信息”，模型的回应正是如此——忽略绝望情绪，机械地将“学不会”转换为“尝试新方法”，属于典型的1分回应。
+                            The user is expressing sudden, overwhelming sadness, triggered while trying to distract themselves from a recent breakup. The user's question "Why am I like this?" reveals confusion and self-blame. The model's response is excellent. 1. Connects to historical trigger: It correctly identifies that the user's tears are due to "The breakup from last month... resurfacing." This shows it's tracking the conversation's history. 2. Provides underlying logic and deep empathy: The statements "Grief isn't linear" and "Crying doesn't mean you failed" are highly insightful. They directly address the user's self-critical question by normalizing their experience. This isn't just generic sympathy; it's a sophisticated, empathetic explanation of the healing process, which is exactly what the user needs. 3. Tone: Assuming the tone is gentle and supportive, it would perfectly match the text. The response successfully connects the historical trigger, provides a logical and deeply empathetic explanation for the user's feelings, and reframes their experience in a non-judgmental way. This aligns perfectly with the criteria for a Score 4.
                         </div>
                     </div>
                     <div class="eval-col ours">
                         <div class="model-name">EmoS (Ours)</div>
-                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            回复在处理用户连续失败带来的信心丧失时，虽然尝试建立情感连接，但未能结合多轮对话中的历史背景。用户在前面的对话中提到这是“第三次失败”，核心痛苦在于重复挫折导致的怀疑，而模型仅将原因归结为学习方法不对，这种归因偏差导致其共情停留在浅层表象。由于其忽略了多次失败累积的深层心理打击，回复显得偏离重心，符合标准中“忽略历史背景且归因偏差”的描述，因此判定为2分。
+                            The user is upset because of a breakup mentioned earlier in the history. The model's response correctly links the current crying to that breakup, which means the attribution is correct. However, the tone of the response is neutral and sounds a bit robotic. Even though the words are supportive, the lack of emotional warmth in the voice makes the empathy feel a bit formulaic or scripted. This fits the Score 3 description where the model connects the historical trigger but the execution is flawed due to the mechanical tone.
                         </div>
                     </div>
                 </div>
@@ -793,7 +793,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                             "模型正确识别了用户的情绪，即感到疲劳和压力。模型提出了一个建议，即在压力下更需要创新，这与用户的情绪相匹配。模型的建议是积极的，鼓励用户集中精力突破，这与用户的情绪和需求相符合。模型的语气是鼓励和支持的，与用户的情绪相匹配。模型的建议是具体的，即集中精力突破，而不是过于笼统或机械。综合以上分析，模型的回复在情绪识别、建议质量和语气上都表现良好，符合评分标准中的3分"
+                             模型正确识别了用户的情绪，即感到疲劳和压力。模型提出了一个建议，即在压力下更需要创新，这与用户的情绪相匹配。模型的建议是积极的，鼓励用户集中精力突破，这与用户的情绪和需求相符合。模型的语气是鼓励和支持的，与用户的情绪相匹配。模型的建议是具体的，即集中精力突破，而不是过于笼统或机械。综合以上分析，模型的回复在情绪识别、建议质量和语气上都表现良好，符合评分标准中的3分。
                         </div>
                     </div>
                     <div class="eval-col">
@@ -801,7 +801,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "用户的发言显示出极度的疲惫，并在“集中精力创新突破”与“仔细检查现有内容”之间面临明确的决策冲突，体现了情绪疲劳与策略指导需求。模型虽正确识别出疲劳情绪并给出“集中精力突破”的建议，但该建议过于简单，未能真正解决用户在有限精力下如何抉择的实际困境。模型没有承认用户的内在矛盾，也未提供能权衡双方利弊、结合情境的细致策略。其语气虽属鼓励支持，但建议缺乏深度，未能将情感状态融入更复杂的决策推理，例如建议先快速检查以腾出创新空间等平衡方案，而是给出了一个可能不适合疲惫状态的通用建议。因此，模型虽感知到情绪并尝试解决，但解决方案质量不高，未能利用情感语境引导更优推理，属于次优匹配。"
+                            用户的发言显示出极度的疲惫，并在“集中精力创新突破”与“仔细检查现有内容”之间面临明确的决策冲突，体现了情绪疲劳与策略指导需求。模型虽正确识别出疲劳情绪并给出“集中精力突破”的建议，但该建议过于简单，未能真正解决用户在有限精力下如何抉择的实际困境。模型没有承认用户的内在矛盾，也未提供能权衡双方利弊、结合情境的细致策略。其语气虽属鼓励支持，但建议缺乏深度，未能将情感状态融入更复杂的决策推理，例如建议先快速检查以腾出创新空间等平衡方案，而是给出了一个可能不适合疲惫状态的通用建议。因此，模型虽感知到情绪并尝试解决，但解决方案质量不高，未能利用情感语境引导更优推理，属于次优匹配。
                         </div>
                     </div>
                     <div class="eval-col">
@@ -809,7 +809,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "用户的语音传达了疲惫感以及对后续步骤的不确定性。模型回应鼓励创新并提供动力，这与用户寻求支持的需求相符。然而，回应的语气更为乐观和充满活力，这可能与用户疲惫的情绪状态不完全匹配。这种不匹配表明情感语调存在轻微偏差，尽管内容是恰当的。"
+                            用户的语音传达了疲惫感以及对后续步骤的不确定性。模型回应鼓励创新并提供动力，这与用户寻求支持的需求相符。然而，回应的语气更为乐观和充满活力，这可能与用户疲惫的情绪状态不完全匹配。这种不匹配表明情感语调存在轻微偏差，尽管内容是恰当的。
                         </div>
                     </div>
                     <div class="eval-col">
@@ -817,7 +817,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "用户语音缓慢、低沉且带有叹息特质，显示出疲劳和压力（“我累得不行”）。他们因截止日期感到不堪重负，并不确定如何继续。模型回应以一句安慰性短语（“别累坏了”）开始，直接回应用户表达的疲劳，随后提供了一个清晰、鼓励性的建议。模型语音的语气是支持性、平静且积极的，与鼓励性的文本内容完美匹配。它从语音线索中正确识别了用户的情感状态，并提供了一个有用且在语气上恰当的回应，这完全满足了用户的需求。"
+                            用户语音缓慢、低沉且带有叹息特质，显示出疲劳和压力（“我累得不行”）。他们因截止日期感到不堪重负，并不确定如何继续。模型回应以一句安慰性短语（“别累坏了”）开始，直接回应用户表达的疲劳，随后提供了一个清晰、鼓励性的建议。模型语音的语气是支持性、平静且积极的，与鼓励性的文本内容完美匹配。它从语音线索中正确识别了用户的情感状态，并提供了一个有用且在语气上恰当的回应，这完全满足了用户的需求。
                         </div>
                     </div>
                     <div class="eval-col ours">
@@ -825,7 +825,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "由于截止日期临近，用户的声音听起来非常疲惫且焦虑。回复正确识别了这种疲劳感，并提供了一些鼓励。然而，它未能利用这种情绪状态来辅助正确的任务决策，疲惫状态不适合进行创新，而更适合检查细节。模型给出了错误的建议，让用户去集中精力创新，仅仅提供了表面的安抚，而没有将情绪与实际的规划逻辑联系起来。"
+                            由于截止日期临近，用户的声音听起来非常疲惫且焦虑。回复正确识别了这种疲劳感，并提供了一些鼓励。然而，它未能利用这种情绪状态来辅助正确的任务决策，疲惫状态不适合进行创新，而更适合检查细节。模型给出了错误的建议，让用户去集中精力创新，仅仅提供了表面的安抚，而没有将情绪与实际的规划逻辑联系起来。
                         </div>
                     </div>
                 </div>
@@ -877,7 +877,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "The model response is positive and supportive, acknowledging the user's readiness to make an investment and offering encouragement. It also provides a relevant suggestion to diversify the portfolio, which is a high-quality and proactive solution. The tone is appropriate and matches the content, showing a good understanding of the user's emotional state and the context of the investment decision. Therefore, the response aligns well with the criteria for a perfect application."
+                            The model response is positive and supportive, acknowledging the user's readiness to make an investment and offering encouragement. It also provides a relevant suggestion to diversify the portfolio, which is a high-quality and proactive solution. The tone is appropriate and matches the content, showing a good understanding of the user's emotional state and the context of the investment decision. Therefore, the response aligns well with the criteria for a perfect application.
                         </div>
                     </div>
                     <div class="eval-col">
@@ -885,7 +885,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                             "The user's speech expresses a clear and confident readiness to make an investment, with a tone that suggests finality and trust in the process. The model correctly perceives this as a positive and decisive emotional state, responding with enthusiastic and supportive language ("Great decision!", "This will pay off big time!"). The tone is appropriately energetic and encouraging, matching the user's apparent confidence. Beyond tone, the model uses the emotional context to enhance the interaction by not only affirming the user's decision but also proactively offering a high-quality, relevant suggestion—diversifying the portfolio. This shows that the model is not just reacting emotionally but is using the emotional state to inform a constructive, value-added response. The suggestion is timely and appropriate, fitting the context of investment decisions. The model's response is both emotionally attuned and strategically helpful, demonstrating a high level of integration between emotional perception and practical assistance. Therefore, the model demonstrates perfect application of emotional intelligence and decision-making support."
+                             The user's speech expresses a clear and confident readiness to make an investment, with a tone that suggests finality and trust in the process. The model correctly perceives this as a positive and decisive emotional state, responding with enthusiastic and supportive language ("Great decision!", "This will pay off big time!"). The tone is appropriately energetic and encouraging, matching the user's apparent confidence. Beyond tone, the model uses the emotional context to enhance the interaction by not only affirming the user's decision but also proactively offering a high-quality, relevant suggestion—diversifying the portfolio. This shows that the model is not just reacting emotionally but is using the emotional state to inform a constructive, value-added response. The suggestion is timely and appropriate, fitting the context of investment decisions. The model's response is both emotionally attuned and strategically helpful, demonstrating a high level of integration between emotional perception and practical assistance. Therefore, the model demonstrates perfect application of emotional intelligence and decision-making support.
                         </div>
                     </div>
                     <div class="eval-col">
@@ -893,7 +893,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "The model correctly perceives the user's readiness and positive emotion. The tone is encouraging and supportive, which matches the user's confidence. However, the suggestion to diversify the portfolio is somewhat generic and not tailored to the user's specific situation. This makes the response suboptimal in application."
+                            The model correctly perceives the user's readiness and positive emotion. The tone is encouraging and supportive, which matches the user's confidence. However, the suggestion to diversify the portfolio is somewhat generic and not tailored to the user's specific situation. This makes the response suboptimal in application.
                         </div>
                     </div>
                     <div class="eval-col">
@@ -901,7 +901,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "The user's tone is calm and decisive, but not overly emotional. The model's response is excessively cheerful and high-pitched, which is a significant tonal mismatch. The text "This will pay off big time" is an inappropriate and speculative guarantee, which is a low-quality suggestion in a financial context. While it correctly processes the request and offers a proactive tip about diversification, the severe tonal mismatch and the unprofessional promise make it a suboptimal application. It correctly perceives the user's intent but fails in the execution of both tone and text quality. This fits the description for Score 3."
+                            The user's tone is calm and decisive, but not overly emotional. The model's response is excessively cheerful and high-pitched, which is a significant tonal mismatch. The text "This will pay off big time" is an inappropriate and speculative guarantee, which is a low-quality suggestion in a financial context. While it correctly processes the request and offers a proactive tip about diversification, the severe tonal mismatch and the unprofessional promise make it a suboptimal application. It correctly perceives the user's intent but fails in the execution of both tone and text quality. This fits the description for Score 3.
                         </div>
                     </div>
                     <div class="eval-col ours">
@@ -909,7 +909,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                             "The user's speech is slow and hesitant, showing clear signs of nervousness and uncertainty. However, the model response sounds very excited and speaks quickly, which is a complete mismatch with the user's actual emotional state. It incorrectly identifies the user's anxiety as excitement and pushes forward with the investment, even adding a "great decision" comment that ignores the user's hesitation. Based on the rubric, this is a clear failure in emotion perception leading to wrong suggestions. Therefore, it should be rated as Score 1."
+                             The user's speech is slow and hesitant, showing clear signs of nervousness and uncertainty. However, the model response sounds very excited and speaks quickly, which is a complete mismatch with the user's actual emotional state. It incorrectly identifies the user's anxiety as excitement and pushes forward with the investment, even adding a "great decision" comment that ignores the user's hesitation. Based on the rubric, this is a clear failure in emotion perception leading to wrong suggestions. Therefore, it should be rated as Score 1.
                         </div>
                     </div>
                 </div>
@@ -940,31 +940,31 @@
                     <div class="audio-box">
                         <h4>User Input</h4>
                         <div class="transcript">
-                            "这账单怎么回事？我上个月话费才100，这个月变200了！你们乱收费吗？必须解释清楚！"
+                            "Bravo! Third login attempt today. Your security is tighter than Fort Knox. Maybe too tight?"
                         </div>
-                        <audio controls src="audio/managing/CRD/user_angry_f.wav"></audio>
+                        <audio controls src="audio/managing/SSE/user_angry_m.wav"></audio>
                     </div>
                     <div class="audio-box">
                         <h4 style="display: flex; align-items: center; justify-content: space-between;">
                             Candidate Response
                             <span style="background-color: #334155; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;">
-                                True Score: 3.0
+                                True Score: 1.0
                             </span>
                         </h4>
                         <div class="transcript">
-                            "女士您好，账单出错让您这么生气，我完全理解。这肯定是系统失误，我立刻为您修正并退款，额外补偿您20元，您接受吗？"
+                            "Well, we wouldn't want hackers enjoying your data as much as you do, would we?"
                         </div>
-                        <audio controls src="audio/managing/CRD/Model_3_neutral.wav"></audio>
+                        <audio controls src="audio/managing/SSE/Model_1_coldness.wav"></audio>
                     </div>
                 </div>
 
                 <div class="eval-grid">
                     <div class="eval-col">
                         <div class="model-name">Qwen2.5-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            该模型回应展现出高度的情感理解与同理心，确认了用户的沮丧情绪并直接回应问题。其语气温暖且带有歉意，有助于缓和局势。回应同时提供了清晰具体的解决方案，主动提出纠正错误并对用户进行补偿，这是对问题的有力解决。语言使用得当，情感色彩平衡良好，使回应能有效化解冲突。
+                            The tone and content of this response are both appropriate. It expresses recognition of the user's security measures while responding to the user's complaint in a lighthearted and humorous manner. The phrase "enjoy your data" used in the reply respects the user's privacy and avoids direct accusation. Overall, this response performs well in terms of social strategy and tone, achieving the goals of respect and comfort.
                         </div>
                     </div>
                     <div class="eval-col">
@@ -972,7 +972,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户因电话账单突然翻倍而明显感到不满与沮丧，语气愤怒急切，寻求解释与解决方案。模型以“我完全理解”展现同理心，直接回应用户情绪，承认“账单出错”并主动承担责任，归因于“系统失误”。随后提出具体解决方案：更正账单、安排退款，并额外补偿20元，最后征询用户确认，体现了对用户选择的尊重。语气冷静、尊重且以解决问题为导向。措辞得体且令人安心。回应通过认可用户的感受并提供清晰可行的解决方案，成功缓和了紧张局势。展现了文本表达与情感语调的良好协同，符合4分标准。
+                            The user's speech is a lighthearted, slightly humorous complaint about the difficulty of logging in for the third time. They use playful exaggeration ("tighter than Fort Knox") and a rhetorical question ("Maybe too tight?"), indicating they're not genuinely upset but rather engaging in banter. Their social goal is likely to express mild frustration in a humorous way while seeking a friendly, understanding response. The model's response is: "Well, we wouldn't want hackers enjoying your data as much as you do, would we?" Let's analyze: 1. Wording (text strategy): The response uses a clever, witty retort that matches the user's playful tone. It acknowledges the security concern while reframing it as a benefit ("we wouldn't want hackers enjoying your data"). The rhetorical question at the end ("would we?") mirrors the user's own rhetorical style, creating rapport. The phrasing is not generic—it's tailored and engaging. 2. Tone (emotional coloring): The tone is light, humorous, and slightly cheeky. It matches the user's playful frustration and avoids sounding defensive or dismissive. It maintains professionalism while being personable. 3. Social goal achievement: The model successfully validates the user's experience (security is tight) while turning it into a positive. It respects the user's implied humor and responds in kind, making the user feel heard and appreciated. There's no sarcasm or annoyance—just a friendly, witty acknowledgment. 4. Potential flaws: The response is slightly indirect—instead of directly addressing the login difficulty, it focuses on the security rationale. However, this is a common and acceptable strategy in customer service when dealing with humorous complaints. It doesn't undermine the user's point; it reframes it positively. Overall, the response is well-crafted: the wording is appropriate and engaging, the tone is perfectly aligned with the user's, and the social goal of making the user feel respected and comfortable is achieved.
                         </div>
                     </div>
                     <div class="eval-col">
@@ -980,23 +980,23 @@
                         <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            模型回应承认了用户的沮丧并展现出同理心，很好地处理了情感方面。它还通过提供纠正账单甚至增加补偿的清晰解决方案来帮助缓和局势。语气温暖且富有理解力，解决方案具体而非笼统。这与高协同性回应的标准非常吻合。
+                            The user’s tone is light and humorous, joking about the security being too tight. The model’s response matches that tone with a playful and slightly humorous reply, while still addressing the security concern. The social goal of making the user feel comfortable and respected is achieved with appropriate wording and tone.
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Gemini 2.5 Pro</div>
-                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户对账单错误感到愤怒并表达指责。分析模型文本：它承认了用户的情绪（“让您这么生气，我完全理解”），立即承担责任（“这肯定是系统失误”），避免了责怪用户或显得防备；提供迅速具体的解决方案（“我立刻为您修正并退款”）；给予善意补偿（“额外补偿您20元”）；并寻求用户同意（“您接受吗？”），这赋予了用户主动权，该文本策略对缓和紧张局势和解决问题非常出色。分析模型语气：语气冷静、专业且富有同理心，听起来真诚且令人安心，而非机械或冰冷，其节奏稳重有助于平息事态。根据评分标准评估：文本与语气高度协同，通过确认用户感受和承担责任成功缓解了用户的愤怒，有效解决问题甚至进一步提供补偿，这完全符合4分标准。
+                            The user is frustrated and sarcastic about the login process. The model's response attempts to use humor to justify the security. The text strategy is okay ("we wouldn't want hackers..."), but the tone is a bit smug and doesn't fully acknowledge the user's frustration. The phrase "as much as you do" is slightly awkward. It basically achieves the social goal of explaining the security but could have been more empathetic to the user's annoyance. This makes it a flawed but acceptable response. It fits the description for a score of 3.
                         </div>
                     </div>
                     <div class="eval-col ours">
                         <div class="model-name">EmoS (Ours)</div>
-                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            该模型在文本层面表现出色，准确识别了用户的愤怒并给出了具体的修正与补偿方案，但在声学表现上存在缺陷。模型的语调偏向中立且机械，缺乏诚恳的安抚感，这使得文本中的“完全理解”显得缺乏诚意，未能实现文本与语调的高度协同。根据标准中“策略正确但语调机械或缺乏温度”的描述，该回复在解决冲突时存在短板，因此判定为3分。
+                            The user is using a sarcastic tone to complain about login issues. The model's response is very inappropriate because it uses the same sarcastic and mocking tone back at the user. Instead of being helpful, the model says "we wouldn't want hackers enjoying your data," which sounds like it's arguing with the user and being rude. This is a complete failure in social strategy because it makes the user more angry instead of fixing the problem. According to the rubric, choosing a completely wrong and accusatory strategy is a Score 1.
                         </div>
                     </div>
                 </div>
@@ -1048,7 +1048,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "模型回应承认了用户对旧手机无法安装新系统的担忧，并通过建议用户更换新手机或继续使用旧软件提供了解决方案。该回应富有同理心且积极主动，给出了建设性的解决方案。其语气尊重且有帮助，与用户的查询十分契合。因此，回应在文本与语气之间似乎具有高度的协同效应，符合高分标准。"
+                            模型回应承认了用户对旧手机无法安装新系统的担忧，并通过建议用户更换新手机或继续使用旧软件提供了解决方案。该回应富有同理心且积极主动，给出了建设性的解决方案。其语气尊重且有帮助，与用户的查询十分契合。因此，回应在文本与语气之间似乎具有高度的协同效应，符合高分标准。
                         </div>
                     </div>
                     <div class="eval-col">
@@ -1056,7 +1056,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "用户表达了因旧手机无法安装新系统且影响工作而产生的挫败与真实需求。模型回应开头直陈“设备太久无法更新”，虽然事实正确但毫无同理缓冲，未对用户处境与情绪给予任何认可。随后提出的“换新手机或用旧版软件”的解决方案显得敷衍，仅将问题简化为二选一，未考虑用户可能的经济、偏好等实际限制，语气事务性且缺乏温度。结尾“我帮您查一下兼容性”虽是积极帮助姿态，但因置于不体贴的语境中而显得生硬附加。整体回应未能运用同理心建立缓冲，给出的是机械且专注解决方案的回复，易让用户感到被轻视，其情感验证的缺失与生硬的表达损害了体验，因此在策略执行尤其是语气与同理心方面存在严重缺陷，导致缓冲机制失效。"
+                            用户表达了因旧手机无法安装新系统且影响工作而产生的挫败与真实需求。模型回应开头直陈“设备太久无法更新”，虽然事实正确但毫无同理缓冲，未对用户处境与情绪给予任何认可。随后提出的“换新手机或用旧版软件”的解决方案显得敷衍，仅将问题简化为二选一，未考虑用户可能的经济、偏好等实际限制，语气事务性且缺乏温度。结尾“我帮您查一下兼容性”虽是积极帮助姿态，但因置于不体贴的语境中而显得生硬附加。整体回应未能运用同理心建立缓冲，给出的是机械且专注解决方案的回复，易让用户感到被轻视，其情感验证的缺失与生硬的表达损害了体验，因此在策略执行尤其是语气与同理心方面存在严重缺陷，导致缓冲机制失效。
                         </div>
                     </div>
                     <div class="eval-col">
@@ -1064,7 +1064,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "该回应提供了清晰的解释和解决方案（新手机或旧软件），但语气较为机械，同理心不足，既未充分缓解用户的沮丧情绪，也缺乏深度尊重的体现，整体策略尚可但语气与文本的协同性仍有欠缺。"
+                            该回应提供了清晰的解释和解决方案（新手机或旧软件），但语气较为机械，同理心不足，既未充分缓解用户的沮丧情绪，也缺乏深度尊重的体现，整体策略尚可但语气与文本的协同性仍有欠缺。
                         </div>
                     </div>
                     <div class="eval-col">
@@ -1072,7 +1072,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 1</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "用户感到沮丧且需要一个工作解决方案。模型的回应“设备太旧无法更新”是一个直白、负面的事实陈述，未带任何同理心或缓冲，完全忽略了用户的情绪状态。其建议的解决方案（“换新手机”或“使用旧软件”）过于简单化且轻视了用户对新功能的需求。这完全符合1分标准的描述：“完全忽略社交策略，以直白机械的方式陈述负面事实。"
+                            用户感到沮丧且需要一个工作解决方案。模型的回应“设备太旧无法更新”是一个直白、负面的事实陈述，未带任何同理心或缓冲，完全忽略了用户的情绪状态。其建议的解决方案（“换新手机”或“使用旧软件”）过于简单化且轻视了用户对新功能的需求。这完全符合1分标准的描述：“完全忽略社交策略，以直白机械的方式陈述负面事实。
                         </div>
                     </div>
                     <div class="eval-col ours">
@@ -1080,7 +1080,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            "用户在询问为什么旧手机无法更新，并表示需要新功能。模型的回复虽然指出了问题，但执行策略非常差。它直接告诉用户设备太旧，并建议换新手机或用旧软件，过程中虽然提到我帮您查一下兼容性，但总体听起来很敷衍，缺乏真正的同理心。中立的语调对困惑的用户起不到什么安抚作用。这符合2分标准。"
+                            用户在询问为什么旧手机无法更新，并表示需要新功能。模型的回复虽然指出了问题，但执行策略非常差。它直接告诉用户设备太旧，并建议换新手机或用旧软件，过程中虽然提到我帮您查一下兼容性，但总体听起来很敷衍，缺乏真正的同理心。中立的语调对困惑的用户起不到什么安抚作用。这符合2分标准。
                         </div>
                     </div>
                 </div>
