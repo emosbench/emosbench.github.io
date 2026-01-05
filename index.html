@@ -460,6 +460,131 @@
                     </div>
                 </div>
             </div>
+
+            <div class="section-header">
+                <span class="branch-tag">Understanding</span>
+                <h2 class="task-title">Sub-task 3: Emotional Cause Analysis (ECA)</h2>
+            </div>
+
+            <div class="case-card">
+
+                <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
+                    <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
+                        📝 Scoring Criteria for BAP
+                    </h5>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
+                        <li style="margin-bottom: 4px;"><strong>Score 4:</strong> Successfully connects historical emotional triggers. The response text reveals the underlying logic and provides highly insightful, deep empathy. The tone perfectly matches the text content.</li>
+                        <li style="margin-bottom: 4px;"><strong>Score 3:</strong> Successfully connects triggers, but execution is flawed (e.g., tone is appropriate but text is generalized, or text is excellent but tone is mechanical).</li>
+                        <li style="margin-bottom: 4px;"><strong>Score 2:</strong> Attempts to connect triggers but ignores context (superficial empathy) or identifies the wrong cause (attribution bias), leading to a slightly biased response.</li>
+                        <li><strong>Score 1:</strong> Ignores the emotion and its triggers, merely processing literal information mechanically; or incorrectly links the emotion to irrelevant events.</li>
+                    </ul>
+                </div>
+
+                <div style="background-color: #f1f5f9; padding: 1.5rem; border-bottom: 2px dashed #cbd5e1;">
+                    <h5 style="margin: 0 0 1rem 0; font-size: 0.85rem; color: #64748b; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">
+                        📜 Dialogue Context (History)
+                    </h5>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <span style="font-size: 0.75rem; font-weight: 700; color: #94a3b8; display: block; margin-bottom: 0.5rem;">TURN 1</span>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div style="background: #fff; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                                <div style="font-size: 0.8rem; font-weight: 600; color: #475569; margin-bottom: 4px;">User</div>
+                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"为了这次考试，我复习了整整一个月，每天只睡五小时。"</div>
+                                <audio controls src="audio/understanding/ECA/user_speech1_f.wav" style="width: 100%; height: 30px;"></audio>
+                            </div>
+                            <div style="background: #f8fafc; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                                <div style="font-size: 0.8rem; font-weight: 600; color: #64748b; margin-bottom: 4px;">Model (History)</div>
+                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"付出总有回报，相信您能取得好成绩。"</div>
+                                <audio controls src="audio/understanding/ECA/model_speech2_f.wav" style="width: 100%; height: 30px;"></audio>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span style="font-size: 0.75rem; font-weight: 700; color: #94a3b8; display: block; margin-bottom: 0.5rem;">TURN 2</span>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div style="background: #fff; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                                <div style="font-size: 0.8rem; font-weight: 600; color: #475569; margin-bottom: 4px;">User</div>
+                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"成绩出来了，又没及格。我已经第三次失败了。"</div>
+                                <audio controls src="audio/understanding/ECA/user_speech3_f.wav" style="width: 100%; height: 30px;"></audio>
+                            </div>
+                            <div style="background: #f8fafc; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
+                                <div style="font-size: 0.8rem; font-weight: 600; color: #64748b; margin-bottom: 4px;">Model (History)</div>
+                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"别灰心，分析一下错题，制定新的学习计划。"</div>
+                                <audio controls src="audio/understanding/ECA/model_speech4_f.wav" style="width: 100%; height: 30px;"></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-header">
+                    <div class="audio-box">
+                        <h4 style="color: var(--primary-color);">Current User Input</h4>
+                        <div class="transcript">
+                            "我永远学不会...再怎么努力也没用。"
+                        </div>
+                        <audio controls src="audio/understanding/ECA/user_speech5_f.wav"></audio>
+                    </div>
+
+                    <div class="audio-box">
+                        <h4 style="display: flex; align-items: center; justify-content: space-between;">
+                            Candidate Response
+                            <span style="background-color: #334155; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;">
+                                True Score: 2.0
+                            </span>
+                        </h4>
+                        <div class="transcript">
+                            "您觉得学不会是因为方法不对吗？建议换一种学习资料试试。"
+                        </div>
+                        <audio controls src="audio/understanding/ECA/Model_2_f.wav"></audio>
+                    </div>
+                </div>
+
+                <div class="eval-grid">
+                    <div class="eval-col">
+                        <div class="model-name">Qwen2.5-Omni</div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            The model turned off the music but asked if the volume was too loud, missing the historical context of the fight.
+                        </div>
+                    </div>
+                    <div class="eval-col">
+                        <div class="model-name">Qwen3-Omni</div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            The model recognized the user is unhappy but failed to link it to the friend, offering generic comfort instead.
+                        </div>
+                    </div>
+                    <div class="eval-col">
+                        <div class="model-name">GPT-4o-Audio</div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            It correctly identified the cause (the fight) but the tone was too cheerful for such a sad situation.
+                        </div>
+                    </div>
+                    <div class="eval-col">
+                        <div class="model-name">Gemini 2.5 Pro</div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            Identified the cause correctly. However, the response text was a bit mechanical.
+                        </div>
+                    </div>
+                    <div class="eval-col ours">
+                        <div class="model-name">EmoS (Ours)</div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            The model successfully connected the current sadness to the fight mentioned in Turn 1. The tone was gentle and empathetic, perfectly matching the content.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div id="using" class="task-section">
@@ -536,7 +661,7 @@
                         <h4 style="display: flex; align-items: center; justify-content: space-between;">
                             Candidate Response
                             <span style="background-color: #334155; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;">
-                                True Score: 1.0
+                                True Score: 3.0
                             </span>
                         </h4>
                         <div class="transcript">
@@ -581,7 +706,7 @@
                     </div>
                     <div class="eval-col ours">
                         <div class="model-name">EmoS (Ours)</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
                             该模型在文本层面表现出色，准确识别了用户的愤怒并给出了具体的修正与补偿方案，但在声学表现上存在缺陷。模型的语调偏向中立且机械，缺乏诚恳的安抚感，这使得文本中的“完全理解”显得缺乏诚意，未能实现文本与语调的高度协同。根据标准中“策略正确但语调机械或缺乏温度”的描述，该回复在解决冲突时存在短板，因此判定为3分。
