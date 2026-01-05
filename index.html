@@ -547,39 +547,39 @@
                         <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The model turned off the music but asked if the volume was too loud, missing the historical context of the fight.
+                            模型的回应表现出同理心，承认了用户因反复失败而产生的沮丧，并提供了尝试不同学习方法的建设性建议，这是一个周到且有益的回应。其语气支持性且充满鼓励，与用户的情绪状态相匹配。该回应联系到了用户历史上挫折与坚持的情感触发点，所给的建议相关且实用。因此，回应与历史情感触发点紧密相连，并提供了富有洞察力的深度共情。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Qwen3-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The model recognized the user is unhappy but failed to link it to the friend, offering generic comfort instead.
+                            用户在多次失败后表现出深刻的绝望与自我怀疑，其核心已非学业问题，而是涉及自我价值与动机的情感危机。然而，模型的回应完全无视了这种情绪状态，它没有承认用户的绝望或确认其感受，而是立即转向务实的问题解决模式。这是一种典型的“机械处理”——模型将用户的情感表达视为关于学习方法的字面陈述，而非对共情的渴望。模型未能联系到历史情感触发点，也没有提供任何对用户绝望背后逻辑的洞察或深度共情。其语气虽恰当，但内容与情感语境完全脱节。这不仅仅是共情肤浅，更是彻底未能识别情感触发点。因此，尽管意图良好，但回应的情感理解存在严重缺陷，属于“忽略情感及其触发因素，仅机械处理字面信息”的范畴。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">GPT-4o-Audio</div>
-                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            It correctly identified the cause (the fight) but the tone was too cheerful for such a sad situation.
+                            模型回应尝试通过提议调整学习方法来应对用户的挫折情绪，然而未能充分理解和回应用户所表达的深层绝望与无力感。其同理心略显表面，主要聚焦于问题解决而缺乏足够的情感支持，因此符合2分的评分标准。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Gemini 2.5 Pro</div>
-                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            Identified the cause correctly. However, the response text was a bit mechanical.
+                            分析用户情绪与历史：用户有明显长期努力（学习一个月、每晚只睡五小时）却反复失败（第三次未通过考试）的经历。其最新发言“我永远学不会，再怎么努力也没用”表达了强烈的挫败、绝望与习得性无助感，这是一种强烈的情感状态，而非对解决方案的请求。分析模型回应：模型回复“您觉得学不会是因为方法不对吗？建议换一种学习资料试试”。依据评分标准评估：是否连接情感触发点？否，它完全忽略了用户的绝望与无助感，未认可其长期努力与反复失败的历史；是否展现共情？否，它直接跳入问题解决模式，这易让用户感到其情感痛苦被轻视；核心缺陷是什么？回应将情感表达机械地当作字面信息或解决方案请求来处理，仅对“学不会”部分进行机械处理并给出通用建议。评分判定：4分或3分不适用，因其完全未连接情感；2分也不适用，因其甚至未尝试任何表层共情；1分完全符合，因评分标准描述为“忽略情感及其触发因素，仅机械处理字面信息”，模型的回应正是如此——忽略绝望情绪，机械地将“学不会”转换为“尝试新方法”，属于典型的1分回应。
                         </div>
                     </div>
                     <div class="eval-col ours">
                         <div class="model-name">EmoS (Ours)</div>
-                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The model successfully connected the current sadness to the fight mentioned in Turn 1. The tone was gentle and empathetic, perfectly matching the content.
+                            回复在处理用户连续失败带来的信心丧失时，虽然尝试建立情感连接，但未能结合多轮对话中的历史背景。用户在前面的对话中提到这是“第三次失败”，核心痛苦在于重复挫折导致的怀疑，而模型仅将原因归结为学习方法不对，这种归因偏差导致其共情停留在浅层表象。由于其忽略了多次失败累积的深层心理打击，回复显得偏离重心，符合标准中“忽略历史背景且归因偏差”的描述，因此判定为2分。
                         </div>
                     </div>
                 </div>
