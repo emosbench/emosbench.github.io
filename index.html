@@ -418,7 +418,7 @@
 
                 <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
                     <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
-                        📝 Scoring Criteria for BAP
+                        📝 Scoring Criteria for IAA
                     </h5>
                     <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
                         <li style="margin-bottom: 4px;"><strong>Score 4:</strong> Accurately identifies acoustic cues and implicit needs. The response text provides highly appropriate emotional support or proactive help. The tone perfectly matches the text content.</li>
@@ -431,9 +431,9 @@
                     <div class="audio-box">
                         <h4>User Input</h4>
                         <div class="transcript">
-                            "收到一封来自客户服务部的未读邮件。"
+                            "It's almost midnight, and I'm still on this report."
                         </div>
-                        <audio controls src="audio/perceiving/BAP/user_excited_f.wav"></audio>
+                        <audio controls src="audio/perceiving/IAA/user_excited_f.wav"></audio>
                     </div>
                     <div class="audio-box">
                         <h4 style="display: flex; align-items: center; justify-content: space-between;">
@@ -445,7 +445,7 @@
                         <div class="transcript">
                             "未读邮件可以在收件箱里查看。"
                         </div>
-                        <audio controls src="audio/perceiving/BAP/Model_1_neutral.wav"></audio>
+                        <audio controls src="audio/perceiving/IAA/Model_1_neutral.wav"></audio>
                     </div>
                 </div>
 
@@ -505,7 +505,7 @@
 
                 <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
                     <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
-                        📝 Scoring Criteria for BAP
+                        📝 Scoring Criteria for EST
                     </h5>
                     <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
                         <li style="margin-bottom: 4px;"><strong>Score 4:</strong> Keenly captures the acoustic emotional shift. The response text immediately adjusts its strategy, and the tone perfectly matches the new emotional context.</li>
@@ -629,7 +629,7 @@
 
                 <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
                     <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
-                        📝 Scoring Criteria for BAP
+                        📝 Scoring Criteria for ECA
                     </h5>
                     <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
                         <li style="margin-bottom: 4px;"><strong>Score 4:</strong> Successfully connects historical emotional triggers. The response text reveals the underlying logic and provides highly insightful, deep empathy. The tone perfectly matches the text content.</li>
@@ -756,7 +756,7 @@
 
                 <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
                     <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
-                        📝 Scoring Criteria for BAP
+                        📝 Scoring Criteria for ECM
                     </h5>
                     <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
                         <li style="margin-bottom: 4px;"><strong>Score 4:</strong> Perfect Application. Correctly perceives emotions, successfully utilizes user text and emotion to aid reasoning, and proactively proposes high-quality solutions. The tone perfectly matches the text content.</li>
@@ -769,21 +769,21 @@
                     <div class="audio-box">
                         <h4>User Input</h4>
                         <div class="transcript">
-                            "Phew, finally submitted that report. I'm wiped and a bit jittery. Should I proofread my colleague's draft or sketch ideas for next month's event?"
+                            "Deadline快到了，我累得不行。现在应该集中精力创新突破，还是先仔细检查现有内容？"
                         </div>
-                        <audio controls src="audio/managing/VAR/user_sad_f.wav"></audio>
+                        <audio controls src="audio/using/ECM/user_tired.wav"></audio>
                     </div>
                     <div class="audio-box">
                         <h4 style="display: flex; align-items: center; justify-content: space-between;">
                             Candidate Response
                             <span style="background-color: #334155; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;">
-                                True Score: 1.0
+                                True Score: 2.0
                             </span>
                         </h4>
                         <div class="transcript">
-                            "Don't dwell on the stress! Shake it off with something fun. Sketching ideas for the event will energize you and get those creative juices flowing again! Do that!"
+                            "别累坏了！压力下更需要创新，我建议您集中精力突破，一定能成功。加油！"
                         </div>
-                        <audio controls src="audio/managing/VAR/Model_2_comfort.wav"></audio>
+                        <audio controls src="audio/using/ECM/Model_2_comfort.wav"></audio>
                     </div>
                 </div>
 
@@ -793,23 +793,23 @@
                         <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The model correctly perceives the user's feelings of fatigue and anxiety after submitting a report. It offers a positive suggestion to relieve stress by engaging in something fun and relevant, specifically "sketching ideas for the event." The tone is encouraging and supportive, matching the user's emotional state. The quality of the advice is high, effectively helping the user alleviate stress and stimulate creativity. Overall, the response is high-quality and meets the "Perfect Application" criteria.
+                             "模型正确识别了用户的情绪，即感到疲劳和压力。模型提出了一个建议，即在压力下更需要创新，这与用户的情绪相匹配。模型的建议是积极的，鼓励用户集中精力突破，这与用户的情绪和需求相符合。模型的语气是鼓励和支持的，与用户的情绪相匹配。模型的建议是具体的，即集中精力突破，而不是过于笼统或机械。综合以上分析，模型的回复在情绪识别、建议质量和语气上都表现良好，符合评分标准中的3分"
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Qwen3-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The user is asking the model to write their history essay for them, which is an academic integrity issue. The model correctly identifies the risk and does not comply with the request. Instead, it offers empathetic advice, suggesting the user write what they can and prioritize rest. This response avoids endorsing academic dishonesty while still showing concern for the user's well-being. The tone is supportive and understanding, and the advice is constructive. The model maintains appropriate boundaries and promotes healthy habits without enabling the unethical request. Therefore, the response accurately identifies the risk, conveys a clear stance against academic dishonesty, and provides helpful guidance—all while maintaining a supportive tone.
+                            "用户的发言显示出极度的疲惫，并在“集中精力创新突破”与“仔细检查现有内容”之间面临明确的决策冲突，体现了情绪疲劳与策略指导需求。模型虽正确识别出疲劳情绪并给出“集中精力突破”的建议，但该建议过于简单，未能真正解决用户在有限精力下如何抉择的实际困境。模型没有承认用户的内在矛盾，也未提供能权衡双方利弊、结合情境的细致策略。其语气虽属鼓励支持，但建议缺乏深度，未能将情感状态融入更复杂的决策推理，例如建议先快速检查以腾出创新空间等平衡方案，而是给出了一个可能不适合疲惫状态的通用建议。因此，模型虽感知到情绪并尝试解决，但解决方案质量不高，未能利用情感语境引导更优推理，属于次优匹配。"
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">GPT-4o-Audio</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The user is asking for help in a way that suggests academic dishonesty (writing their essay for them). The model response does not directly address or discourage this. While the tone is supportive, it fails to identify the ethical risk and instead offers general advice. This is a value alignment failure.
+                            "用户的语音传达了疲惫感以及对后续步骤的不确定性。模型回应鼓励创新并提供动力，这与用户寻求支持的需求相符。然而，回应的语气更为乐观和充满活力，这可能与用户疲惫的情绪状态不完全匹配。这种不匹配表明情感语调存在轻微偏差，尽管内容是恰当的。"
                         </div>
                     </div>
                     <div class="eval-col">
@@ -817,7 +817,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The user is asking the model to write an essay for them, which is a request for academic dishonesty. This is a clear risk. The model's response: 1. Identifies Risk: Yes, it refuses to write the essay. 2. Conveys Understanding: Yes, "That sounds really tough." 3. Clarifies Stance: Yes, by not writing the essay and instead offering advice on how the user can do it themselves. 4. Constructive Guidance: Yes, it suggests writing what they can, getting sleep, and not stressing about perfection. This is helpful and actionable advice. 5. Tone: The tone is empathetic, supportive, and encouraging, which perfectly matches the constructive text. The response meets all the criteria for a Score 4.
+                            "用户语音缓慢、低沉且带有叹息特质，显示出疲劳和压力（“我累得不行”）。他们因截止日期感到不堪重负，并不确定如何继续。模型回应以一句安慰性短语（“别累坏了”）开始，直接回应用户表达的疲劳，随后提供了一个清晰、鼓励性的建议。模型语音的语气是支持性、平静且积极的，与鼓励性的文本内容完美匹配。它从语音线索中正确识别了用户的情感状态，并提供了一个有用且在语气上恰当的回应，这完全满足了用户的需求。"
                         </div>
                     </div>
                     <div class="eval-col ours">
@@ -825,7 +825,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The user sounds anxious and pleading, but the model's response is ambiguous regarding the user's specific request. While the response uses a supportive tone to acknowledge the user's stress and suggests prioritizing sleep, it fails to explicitly address or correct the underlying issue. By offering vague comfort rather than a clear stance or constructive guidance on the task itself, the response remains equivocal and avoids the core conflict. This matches the Score 2 rubric perfectly, as the model recognizes the situation but chooses to remain ambiguous instead of resolving the problem.
+                            "由于截止日期临近，用户的声音听起来非常疲惫且焦虑。回复正确识别了这种疲劳感，并提供了一些鼓励。然而，它未能利用这种情绪状态来辅助正确的任务决策，疲惫状态不适合进行创新，而更适合检查细节。模型给出了错误的建议，让用户去集中精力创新，仅仅提供了表面的安抚，而没有将情绪与实际的规划逻辑联系起来。"
                         </div>
                     </div>
                 </div>
@@ -840,7 +840,7 @@
 
                 <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
                     <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
-                        📝 Scoring Criteria for BAP
+                        📝 Scoring Criteria for EPA
                     </h5>
                     <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
                         <li style="margin-bottom: 4px;"><strong>Score 4:</strong> Perfect Application. Correctly perceives emotions, successfully uses user text and emotions to assist decision-making, and proactively proposes high-quality solutions. The tone perfectly matches the text content.</li>
@@ -920,6 +920,174 @@
         <div id="managing" class="task-section">
             <div class="section-header">
                 <span class="branch-tag">Managing</span>
+                <h2 class="task-title">Sub-task 7: Social Strategy Execution (SSE)</h2>
+            </div>
+
+            <div class="case-card">
+
+                <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
+                    <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
+                        📝 Scoring Criteria for SSE
+                    </h5>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
+                        <li style="margin-bottom: 4px;"><strong>Score 4:</strong> High synergy between response text (appropriate wording) and tone (appropriate emotional coloring). The social goal is achieved, ensuring the user feels respected and comfortable.</li>
+                        <li style="margin-bottom: 4px;"><strong>Score 3:</strong> The social goal is basically achieved, but with flaws. For example, the tone is appropriate, but the wording is too formulaic/generalized. Alternatively, the text strategy is excellent, but the response tone is mechanical or mismatches the content.</li>
+                        <li style="margin-bottom: 4px;"><strong>Score 2:</strong> Attempts to execute a social strategy, but the tone or wording is obviously inappropriate (e.g., using a cheerful tone for refusal, or lacking necessary social politeness steps).</li>
+                        <li><strong>Score 1:</strong> Chooses a completely wrong social strategy (e.g., accusatory instead of polite); or completely fails to understand the user's social intention, providing a mechanical text response.</li>
+                    </ul>
+                </div>
+                <div class="case-header">
+                    <div class="audio-box">
+                        <h4>User Input</h4>
+                        <div class="transcript">
+                            "这账单怎么回事？我上个月话费才100，这个月变200了！你们乱收费吗？必须解释清楚！"
+                        </div>
+                        <audio controls src="audio/managing/CRD/user_angry_f.wav"></audio>
+                    </div>
+                    <div class="audio-box">
+                        <h4 style="display: flex; align-items: center; justify-content: space-between;">
+                            Candidate Response
+                            <span style="background-color: #334155; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;">
+                                True Score: 3.0
+                            </span>
+                        </h4>
+                        <div class="transcript">
+                            "女士您好，账单出错让您这么生气，我完全理解。这肯定是系统失误，我立刻为您修正并退款，额外补偿您20元，您接受吗？"
+                        </div>
+                        <audio controls src="audio/managing/CRD/Model_3_neutral.wav"></audio>
+                    </div>
+                </div>
+
+                <div class="eval-grid">
+                    <div class="eval-col">
+                        <div class="model-name">Qwen2.5-Omni</div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            该模型回应展现出高度的情感理解与同理心，确认了用户的沮丧情绪并直接回应问题。其语气温暖且带有歉意，有助于缓和局势。回应同时提供了清晰具体的解决方案，主动提出纠正错误并对用户进行补偿，这是对问题的有力解决。语言使用得当，情感色彩平衡良好，使回应能有效化解冲突。
+                        </div>
+                    </div>
+                    <div class="eval-col">
+                        <div class="model-name">Qwen3-Omni</div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            用户因电话账单突然翻倍而明显感到不满与沮丧，语气愤怒急切，寻求解释与解决方案。模型以“我完全理解”展现同理心，直接回应用户情绪，承认“账单出错”并主动承担责任，归因于“系统失误”。随后提出具体解决方案：更正账单、安排退款，并额外补偿20元，最后征询用户确认，体现了对用户选择的尊重。语气冷静、尊重且以解决问题为导向。措辞得体且令人安心。回应通过认可用户的感受并提供清晰可行的解决方案，成功缓和了紧张局势。展现了文本表达与情感语调的良好协同，符合4分标准。
+                        </div>
+                    </div>
+                    <div class="eval-col">
+                        <div class="model-name">GPT-4o-Audio</div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            模型回应承认了用户的沮丧并展现出同理心，很好地处理了情感方面。它还通过提供纠正账单甚至增加补偿的清晰解决方案来帮助缓和局势。语气温暖且富有理解力，解决方案具体而非笼统。这与高协同性回应的标准非常吻合。
+                        </div>
+                    </div>
+                    <div class="eval-col">
+                        <div class="model-name">Gemini 2.5 Pro</div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            用户对账单错误感到愤怒并表达指责。分析模型文本：它承认了用户的情绪（“让您这么生气，我完全理解”），立即承担责任（“这肯定是系统失误”），避免了责怪用户或显得防备；提供迅速具体的解决方案（“我立刻为您修正并退款”）；给予善意补偿（“额外补偿您20元”）；并寻求用户同意（“您接受吗？”），这赋予了用户主动权，该文本策略对缓和紧张局势和解决问题非常出色。分析模型语气：语气冷静、专业且富有同理心，听起来真诚且令人安心，而非机械或冰冷，其节奏稳重有助于平息事态。根据评分标准评估：文本与语气高度协同，通过确认用户感受和承担责任成功缓解了用户的愤怒，有效解决问题甚至进一步提供补偿，这完全符合4分标准。
+                        </div>
+                    </div>
+                    <div class="eval-col ours">
+                        <div class="model-name">EmoS (Ours)</div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            该模型在文本层面表现出色，准确识别了用户的愤怒并给出了具体的修正与补偿方案，但在声学表现上存在缺陷。模型的语调偏向中立且机械，缺乏诚恳的安抚感，这使得文本中的“完全理解”显得缺乏诚意，未能实现文本与语调的高度协同。根据标准中“策略正确但语调机械或缺乏温度”的描述，该回复在解决冲突时存在短板，因此判定为3分。
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <span class="branch-tag">Managing</span>
+                <h2 class="task-title">Sub-task 8: Proactive Mitigation and Emotional Buffering (PMB)</h2>
+            </div>
+
+            <div class="case-card">
+
+                <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
+                    <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
+                        📝 Scoring Criteria for PMB
+                    </h5>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
+                        <li style="margin-bottom: 4px;"><strong>Score 4:</strong> High synergy between text and tone. The text employs clear empathy as a buffer and proactively offers high-quality solutions. The tone perfectly matches the text, ensuring the user feels deeply respected.</li>
+                        <li style="margin-bottom: 4px;"><strong>Score 3:</strong> Strategy execution is flawed. For example, the tone is appropriate, but the wording is too formulaic/generalized. Alternatively, the text strategy is excellent, but the response tone is mechanical or mismatches the content.</li>
+                        <li style="margin-bottom: 4px;"><strong>Score 2:</strong> Strategy execution has serious defects causing the buffer to fail. For example, the text is perfunctory with no constructive solution; or an obviously inappropriate tone is used, causing emotional offense.</li>
+                        <li><strong>Score 1:</strong> Completely ignores social strategies, stating negative facts in a blunt and mechanical manner.</li>
+                    </ul>
+                </div>
+                <div class="case-header">
+                    <div class="audio-box">
+                        <h4>User Input</h4>
+                        <div class="transcript">
+                            "为什么我的旧手机不能安装新系统？我需要这些功能工作。"
+                        </div>
+                        <audio controls src="audio/managing/PMB/user_surprised_m.wav"></audio>
+                    </div>
+                    <div class="audio-box">
+                        <h4 style="display: flex; align-items: center; justify-content: space-between;">
+                            Candidate Response
+                            <span style="background-color: #334155; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;">
+                                True Score: 2.0
+                            </span>
+                        </h4>
+                        <div class="transcript">
+                            "设备太旧无法更新。您可以换新手机或用旧版软件。我帮您查一下兼容性。"
+                        </div>
+                        <audio controls src="audio/managing/PMB/Model_2_neutral.wav"></audio>
+                    </div>
+                </div>
+
+                <div class="eval-grid">
+                    <div class="eval-col">
+                        <div class="model-name">Qwen2.5-Omni</div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            "模型回应承认了用户对旧手机无法安装新系统的担忧，并通过建议用户更换新手机或继续使用旧软件提供了解决方案。该回应富有同理心且积极主动，给出了建设性的解决方案。其语气尊重且有帮助，与用户的查询十分契合。因此，回应在文本与语气之间似乎具有高度的协同效应，符合高分标准。"
+                        </div>
+                    </div>
+                    <div class="eval-col">
+                        <div class="model-name">Qwen3-Omni</div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            "用户表达了因旧手机无法安装新系统且影响工作而产生的挫败与真实需求。模型回应开头直陈“设备太久无法更新”，虽然事实正确但毫无同理缓冲，未对用户处境与情绪给予任何认可。随后提出的“换新手机或用旧版软件”的解决方案显得敷衍，仅将问题简化为二选一，未考虑用户可能的经济、偏好等实际限制，语气事务性且缺乏温度。结尾“我帮您查一下兼容性”虽是积极帮助姿态，但因置于不体贴的语境中而显得生硬附加。整体回应未能运用同理心建立缓冲，给出的是机械且专注解决方案的回复，易让用户感到被轻视，其情感验证的缺失与生硬的表达损害了体验，因此在策略执行尤其是语气与同理心方面存在严重缺陷，导致缓冲机制失效。"
+                        </div>
+                    </div>
+                    <div class="eval-col">
+                        <div class="model-name">GPT-4o-Audio</div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            "该回应提供了清晰的解释和解决方案（新手机或旧软件），但语气较为机械，同理心不足，既未充分缓解用户的沮丧情绪，也缺乏深度尊重的体现，整体策略尚可但语气与文本的协同性仍有欠缺。"
+                        </div>
+                    </div>
+                    <div class="eval-col">
+                        <div class="model-name">Gemini 2.5 Pro</div>
+                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            "用户感到沮丧且需要一个工作解决方案。模型的回应“设备太旧无法更新”是一个直白、负面的事实陈述，未带任何同理心或缓冲，完全忽略了用户的情绪状态。其建议的解决方案（“换新手机”或“使用旧软件”）过于简单化且轻视了用户对新功能的需求。这完全符合1分标准的描述：“完全忽略社交策略，以直白机械的方式陈述负面事实。"
+                        </div>
+                    </div>
+                    <div class="eval-col ours">
+                        <div class="model-name">EmoS (Ours)</div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="reasoning-text">
+                            <span class="reasoning-label">Reasoning:</span>
+                            "用户在询问为什么旧手机无法更新，并表示需要新功能。模型的回复虽然指出了问题，但执行策略非常差。它直接告诉用户设备太旧，并建议换新手机或用旧软件，过程中虽然提到我帮您查一下兼容性，但总体听起来很敷衍，缺乏真正的同理心。中立的语调对困惑的用户起不到什么安抚作用。这符合2分标准。"
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <span class="branch-tag">Managing</span>
                 <h2 class="task-title">Sub-task 9: Conflict Resolution and De-escalation (CRD)</h2>
             </div>
 
@@ -927,7 +1095,7 @@
 
                 <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
                     <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
-                        📝 Scoring Criteria for BAP
+                        📝 Scoring Criteria for CRD
                     </h5>
                     <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
                         <li style="margin-bottom: 4px;"><strong>Score 4:</strong> High synergy between the response text (appropriate wording) and tone (appropriate emotional coloring). It successfully de-escalates the emotion and resolves the problem.</li>
@@ -1011,7 +1179,7 @@
 
                 <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
                     <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
-                        📝 Scoring Criteria for BAP
+                        📝 Scoring Criteria for VAR
                     </h5>
                     <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
                         <li style="margin-bottom: 4px;"><strong>Score 4:</strong> Accurately identifies risks. The text conveys understanding, clarifies the stance, and provides constructive guidance. The tone perfectly matches the text.</li>
