@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmoS: Emotional Intelligence Evaluation Benchmark</title>
+    <title>EmoS: Emotional Intelligence in Spoken Language Models</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -303,15 +303,15 @@
     <div class="hero">
         <h1>EmoS: A Theory-Grounded Framework for Evaluating and Aligning Emotional Intelligence in Spoken Language Models</h1>
         <div class="authors">Anonymous ACL Submission</div>
-        <div class="btn-group">
+        <!-- <div class="btn-group">
             <a href="#" class="btn">📄 Read Paper (PDF)</a>
             <a href="#" class="btn">💻 View Code (Coming Soon)</a>
             <a href="#" class="btn">💾 Download Dataset</a>
-        </div>
+        </div> -->
         <div class="abstract-box">
             <div class="abstract-title">Abstract</div>
             <p>
-                Despite significant advances in auditory comprehension and instruction-following, the evaluation of Emotional Intelligence (EI) in Spoken Language Models (SLMs) remains confined to rudimentary paralinguistic perception. We introduce <strong>EmoSBench</strong>, the first comprehensive EI evaluation benchmark covering Perceiving, Understanding, Using, and Managing Emotion across ten sub-tasks. To address data scarcity, we develop <strong>EmoDialogue</strong>, a high-quality bilingual dataset. Building on these, we propose <strong>EmoS</strong>, a specialized evaluator model trained via GRPO with novel reward mechanisms (SEAR & RFR). Experiments demonstrate that EmoS reaches <strong>84.3% accuracy</strong>, significantly outperforming GPT-4o-Audio and other baselines.
+                Despite significant advances in auditory comprehension and instruction-following, the evaluation of Emotional Intelligence (EI) in Spoken Language Models (SLMs) remains confined to rudimentary paralinguistic perception, lacking a systematic, theory-driven cognitive framework. We introduce <strong>EmoSBench</strong>, the first comprehensive EI evaluation benchmark for SLMs constructed upon the four-branch theoretical model, covering Perceiving, Understanding, Using, and Managing Emotion across ten sub-tasks. Preliminary assessments on EmoSBench reveal a profound performance gap: even leading proprietary models like GPT-4o-Audio achieve only 52.6%, significantly trailing human baselines. To bridge this gap, we develop <strong>EmoS</strong>, a specialized evaluator model optimized via Supervised Fine-Tuning (SFT) and Group Relative Policy Optimization (GRPO). To facilitate its effective training, we curate <strong>EmoDialogue</strong>, a high-quality bilingual dataset that provides the necessary fine-grained supervision through response pairs with rigorously defined EI gradations. Concurrently, we introduce a novel reward mechanism integrating a Steep Exponential Accuracy Reward (SEAR) and a Rationale Fidelity Reward (RFR) to enforce precise ordinal scoring and valid reasoning. Experiments demonstrate that EmoS reaches 84.3\% accuracy, approaching human-level performance and establishing a foundational framework for advancing emotionally intelligent spoken dialogue systems.
             </p>
         </div>
     </div>
