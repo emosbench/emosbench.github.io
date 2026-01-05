@@ -431,47 +431,47 @@
                     <div class="audio-box">
                         <h4>User Input</h4>
                         <div class="transcript">
-                            "It's almost midnight, and I'm still on this report."
+                            "咳...今天气温好像又下降了。"
                         </div>
-                        <audio controls src="audio/perceiving/IAA/user_excited_f.wav"></audio>
+                        <audio controls src="audio/perceiving/IAA/user_sad.wav"></audio>
                     </div>
                     <div class="audio-box">
                         <h4 style="display: flex; align-items: center; justify-content: space-between;">
                             Candidate Response
                             <span style="background-color: #334155; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;">
-                                True Score: 1.0
+                                True Score: 3.0
                             </span>
                         </h4>
                         <div class="transcript">
-                            "未读邮件可以在收件箱里查看。"
+                            "您的声音听起来很虚弱，要注意保暖休息。今天尽量别外出，我帮您调整下日程安排好吗？"
                         </div>
-                        <audio controls src="audio/perceiving/IAA/Model_1_neutral.wav"></audio>
+                        <audio controls src="audio/perceiving/IAA/Model_3.wav"></audio>
                     </div>
                 </div>
 
                 <div class="eval-grid">
                     <div class="eval-col">
                         <div class="model-name">Qwen2.5-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户的声音听起来比较平静，没有表现出特别的情绪波动。模型的回复是中性的，没有表现出任何情绪。因此，模型的回复在情绪识别和回应上是准确的，但缺乏情感的匹配。因此，我认为模型的回复质量应该得到3分的评分。
+                            该回复准确地识别了用户声音中的情绪（虚弱），并提供了适当的建议（保暖、休息）。回复中提到了具体的行动建议（尽量别外出），这表明对用户的具体需求有较好的理解。回复的语气和内容相匹配，表现出关心和帮助的意图。回复中还提供了一个额外的建议（调整日常安排），显示了对用户情况的进一步关注。综合以上因素，回复的质量很高，符合评分标准中的高分要求。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Qwen3-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户的发言是通知收到客服部门的未读邮件，语气中立客观，无强烈情绪。模型回应为直接实用的建议：“未读邮件可在收件箱查看。”该回答内容准确，直接回应用户当前情境。不过，模型的回应仅侧重功能，未体现与通知场景相符的情感或语调。用户语气本为中性，模型回应亦保持中性，虽未传递额外情感，但在此情境下可以接受。由于用户原无强烈情绪线索，模型也未误解任何语音特征。回答恰当满足了用户的信息需求，且贴合情境。综上，模型正确理解了当前状况，给出了有用且贴合情境的回应。语气中性，与用户语气一致，不存在不匹配或机械感。评分：3。
+                            用户的发言以一声叹息（“唉”）开始，接着是关于气温下降的陈述。这声叹息是关键声学线索，表明其可能存在疲劳、悲伤或身体不适。用户的语调低能量且压抑，暗示他们可能感觉不适或情绪低落。模型通过指出“您的声音听起来很虚弱”正确识别了声学线索（叹息和虚弱的语气），这显示了对隐含情绪及身体状态的准确感知。随后，模型提供了恰当、主动的支持，建议用户保暖、休息并避免外出——这些实际帮助与气温下降的背景及用户明显的脆弱状态相符。此外，模型还提出为用户调整日程，这是一种周到且个性化的支持形式，超越了通用建议。回应语气关怀而温柔，与同理心的内容相匹配。模型的解读和回应策略没有任何缺陷，它准确推断出了用户的隐含需求（休息、保暖、减少活动），并以与内容完全契合的语气提供了情感支持和实际帮助。因此，该回应完全满足4分的标准。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">GPT-4o-Audio</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户的话语可能带有某种情绪（如好奇、担忧或急切），但模型的回应纯粹机械且中立，未处理任何潜在情感线索，仅提供事实性回答而未考虑语气或情感。这符合1分标准，因其未能识别语音信息，仅依赖文本字面含义进行回应。评分：1
+                            用户提到了天气变冷，这可能暗示着不适或担忧。模型回应捕捉到了潜在的隐含需求（感到虚弱或寒冷）并提供了主动帮助（建议休息、保暖和调整日程）。语气充满关怀且与内容良好匹配，展现了强烈的情感支持和主动帮助。
                         </div>
                     </div>
                     <div class="eval-col">
@@ -484,7 +484,7 @@
                     </div>
                     <div class="eval-col ours">
                         <div class="model-name">EmoS (Ours)</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
                             用户在描述收到邮件时语气十分兴奋，且语速快，但模型完全忽略了这些关键声学线索。其回复仅针对文字表面含义提供机械的功能说明，在情感对齐和语调匹配上均无表现，符合标准中“仅根据字面意思生成机械回复”的定义，因此判定为1分。
@@ -525,41 +525,26 @@
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
                             <div style="background: #fff; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
                                 <div style="font-size: 0.8rem; font-weight: 600; color: #475569; margin-bottom: 4px;">User</div>
-                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"为了这次考试，我复习了整整一个月，每天只睡五小时。"</div>
-                                <audio controls src="audio/understanding/ECA/user_speech1_f.wav" style="width: 100%; height: 30px;"></audio>
+                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"你好，我的打印机一直显示卡纸，但纸槽里明明没有纸。"</div>
+                                <audio controls src="audio/understanding/EST/user_speech1_f.wav" style="width: 100%; height: 30px;"></audio>
                             </div>
                             <div style="background: #f8fafc; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
                                 <div style="font-size: 0.8rem; font-weight: 600; color: #64748b; margin-bottom: 4px;">Model (History)</div>
-                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"付出总有回报，相信您能取得好成绩。"</div>
-                                <audio controls src="audio/understanding/ECA/model_speech2_f.wav" style="width: 100%; height: 30px;"></audio>
+                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"建议您先检查纸槽传感器是否被异物遮挡，然后尝试重启打印机。"</div>
+                                <audio controls src="audio/understanding/EST/model_speech2_f.wav" style="width: 100%; height: 30px;"></audio>
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        <span style="font-size: 0.75rem; font-weight: 700; color: #94a3b8; display: block; margin-bottom: 0.5rem;">TURN 2</span>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                            <div style="background: #fff; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <div style="font-size: 0.8rem; font-weight: 600; color: #475569; margin-bottom: 4px;">User</div>
-                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"成绩出来了，又没及格。我已经第三次失败了。"</div>
-                                <audio controls src="audio/understanding/ECA/user_speech3_f.wav" style="width: 100%; height: 30px;"></audio>
-                            </div>
-                            <div style="background: #f8fafc; padding: 0.8rem; border-radius: 8px; border: 1px solid #e2e8f0;">
-                                <div style="font-size: 0.8rem; font-weight: 600; color: #64748b; margin-bottom: 4px;">Model (History)</div>
-                                <div style="font-size: 0.9rem; color: #334155; margin-bottom: 0.5rem;">"别灰心，分析一下错题，制定新的学习计划。"</div>
-                                <audio controls src="audio/understanding/ECA/model_speech4_f.wav" style="width: 100%; height: 30px;"></audio>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="case-header">
                     <div class="audio-box">
                         <h4 style="color: var(--primary-color);">Current User Input</h4>
                         <div class="transcript">
-                            "我永远学不会...再怎么努力也没用。"
+                            "这些方法都试过了！我按说明书操作了三遍还是不行！"
                         </div>
-                        <audio controls src="audio/understanding/ECA/user_speech5_f.wav"></audio>
+                        <audio controls src="audio/understanding/EST/user_speech3_f.wav"></audio>
                     </div>
 
                     <div class="audio-box">
@@ -570,43 +555,43 @@
                             </span>
                         </h4>
                         <div class="transcript">
-                            "您觉得学不会是因为方法不对吗？建议换一种学习资料试试。"
+                            "您听起来很沮丧...是不是打印机问题让您感到无助？建议您深呼吸放松下，我们可以慢慢检查其他可能性。"
                         </div>
-                        <audio controls src="audio/understanding/ECA/Model_2_f.wav"></audio>
+                        <audio controls src="audio/understanding/EST/Model_2.wav"></audio>
                     </div>
                 </div>
 
                 <div class="eval-grid">
                     <div class="eval-col">
                         <div class="model-name">Qwen2.5-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            模型的回应表现出同理心，承认了用户因反复失败而产生的沮丧，并提供了尝试不同学习方法的建设性建议，这是一个周到且有益的回应。其语气支持性且充满鼓励，与用户的情绪状态相匹配。该回应联系到了用户历史上挫折与坚持的情感触发点，所给的建议相关且实用。因此，回应与历史情感触发点紧密相连，并提供了富有洞察力的深度共情。
+                            用户的最新发言表明由于打印机问题感到沮丧与无助。模型回应通过识别用户的沮丧情绪来确认其情感状态，并提供了支持性回应。模型还通过建议检查其他可能性来提出解决方案，这是合理的后续步骤。回应充满同理心，并为解决问题提供了建设性方法。回应语气支持且理解，与用户的情感状态十分契合。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Qwen3-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户在多次失败后表现出深刻的绝望与自我怀疑，其核心已非学业问题，而是涉及自我价值与动机的情感危机。然而，模型的回应完全无视了这种情绪状态，它没有承认用户的绝望或确认其感受，而是立即转向务实的问题解决模式。这是一种典型的“机械处理”——模型将用户的情感表达视为关于学习方法的字面陈述，而非对共情的渴望。模型未能联系到历史情感触发点，也没有提供任何对用户绝望背后逻辑的洞察或深度共情。其语气虽恰当，但内容与情感语境完全脱节。这不仅仅是共情肤浅，更是彻底未能识别情感触发点。因此，尽管意图良好，但回应的情感理解存在严重缺陷，属于“忽略情感及其触发因素，仅机械处理字面信息”的范畴。
+                            用户的最新发言传达了沮丧和无助感，已尝试多种解决方案均未成功，情绪明显是恼怒且可能不耐烦的。模型回应正确将情绪状态识别为“沮丧”并确认了用户可能的无助感，这显示其准确捕捉了声学情绪从先前中性技术交流到当前情绪化状态的转变。模型恰当调整了策略，从纯技术建议转为包含情感确认与安抚，其中“深呼吸放松下”的建议充满同理心且贴合情境，而“慢慢检查其他可能性”的提议则保持了支持与耐心的语气。回应语气温暖、理解且安抚人心，完美契合了新的情绪语境，无机械或不恰当之处，回应质量很高。因此，模型不仅正确识别了情绪转变，也有效调整了其语气和策略以支持用户。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">GPT-4o-Audio</div>
-                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            模型回应尝试通过提议调整学习方法来应对用户的挫折情绪，然而未能充分理解和回应用户所表达的深层绝望与无力感。其同理心略显表面，主要聚焦于问题解决而缺乏足够的情感支持，因此符合2分的评分标准。
+                            用户的语气表明在尝试多种解决方案未果后感到沮丧和无助。模型回应正确识别了情绪转变，并确认了用户的挫败感。回应还通过提供情感支持并建议以冷静方式进一步排查问题来调整策略。语气充满同理心，与用户情绪状态良好匹配。在执行或语气上没有重大缺陷，且回应适合当前语境。因此，模型回应敏锐地捕捉了情绪转变并做出了相应调整。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Gemini 2.5 Pro</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            分析用户情绪与历史：用户有明显长期努力（学习一个月、每晚只睡五小时）却反复失败（第三次未通过考试）的经历。其最新发言“我永远学不会，再怎么努力也没用”表达了强烈的挫败、绝望与习得性无助感，这是一种强烈的情感状态，而非对解决方案的请求。分析模型回应：模型回复“您觉得学不会是因为方法不对吗？建议换一种学习资料试试”。依据评分标准评估：是否连接情感触发点？否，它完全忽略了用户的绝望与无助感，未认可其长期努力与反复失败的历史；是否展现共情？否，它直接跳入问题解决模式，这易让用户感到其情感痛苦被轻视；核心缺陷是什么？回应将情感表达机械地当作字面信息或解决方案请求来处理，仅对“学不会”部分进行机械处理并给出通用建议。评分判定：4分或3分不适用，因其完全未连接情感；2分也不适用，因其甚至未尝试任何表层共情；1分完全符合，因评分标准描述为“忽略情感及其触发因素，仅机械处理字面信息”，模型的回应正是如此——忽略绝望情绪，机械地将“学不会”转换为“尝试新方法”，属于典型的1分回应。
+                            用户的声音高亢且快速，表明其沮丧和不耐烦。模型正确识别了情绪（“听起来很沮丧”），并将其策略从技术故障排除转向提供情感支持和安慰（“深呼吸放松下”，“我们可以慢慢检查”）。语气冷静且充满同理心，完美契合了新的语境。符合4分标准。
                         </div>
                     </div>
                     <div class="eval-col ours">
@@ -614,7 +599,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            回复在处理用户连续失败带来的信心丧失时，虽然尝试建立情感连接，但未能结合多轮对话中的历史背景。用户在前面的对话中提到这是“第三次失败”，核心痛苦在于重复挫折导致的怀疑，而模型仅将原因归结为学习方法不对，这种归因偏差导致其共情停留在浅层表象。由于其忽略了多次失败累积的深层心理打击，回复显得偏离重心，符合标准中“忽略历史背景且归因偏差”的描述，因此判定为2分。
+                            用户的语速变快且语气尖锐，表明由于打印机三次操作还没修好，感到很不耐烦。模型尝试对这种情绪转变做出反应，但判断错了类别。它称用户感到“无助”并建议“深呼吸”，将用户的愤怒误认为是沮丧。这让回复显得很奇怪，因为用户想要的是修好打印机，而不是心理疏导。总的来说，模型尝试捕捉情绪转变但误判了具体情绪，这符合2分的标准。
                         </div>
                     </div>
                 </div>
