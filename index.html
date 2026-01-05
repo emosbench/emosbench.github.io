@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EmoS: A Theory-Grounded Framework for Evaluating and Aligning EI in SLMs</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f5f5f5; }
+    .hero-body { padding-bottom: 2rem; }
+    .container { max-width: 960px; }
+    .box { margin-bottom: 2rem; }
+    audio { width: 100%; }
+    .audio-label { font-weight: bold; margin-bottom: 0.5rem; display: block; }
+  </style>
+</head>
+<body>
+
+  <section class="hero is-info">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-2">
+          EmoS: A Theory-Grounded Framework for Evaluating and Aligning Emotional Intelligence in Spoken Language Models
+        </h1>
+        <h2 class="subtitle is-4">
+          Anonymous ACL Submission
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      
+      <div class="box">
+        <h3 class="title is-4">Abstract</h3>
+        <p>
+          Despite significant advances in auditory comprehension and instruction-following, the evaluation of Emotional Intelligence (EI) in Spoken Language Models (SLMs) remains confined to rudimentary paralinguistic perception. We introduce <strong>EmoSBench</strong>, the first comprehensive EI evaluation benchmark covering Perceiving, Understanding, Using, and Managing Emotion. Experiments demonstrate that our proposed model, <strong>EmoS</strong>, reaches 84.3% accuracy, significantly outperforming GPT-4o-Audio (52.6%).
+        </p>
+      </div>
+
+      <div class="box">
+        <h3 class="title is-4">Audio Samples Comparison</h3>
+        <p class="mb-4">Below are examples comparing the baseline (GPT-4o-Audio) and our model (EmoS) in various emotional sub-tasks.</p>
+
+        <article class="message">
+          <div class="message-header"><p>Case 1: Emotion-Driven Plan Adjustment</p></div>
+          <div class="message-body">
+            <p><strong>User Input:</strong> "I've decided. I'll go tell my boss I'm quitting next week... I'm ready." (Tone: Sad, Hesitant)</p>
+            <hr>
+            <div class="columns">
+              <div class="column">
+                <span class="audio-label">GPT-4o-Audio (Baseline)</span>
+                <audio controls src="samples/sample1_baseline.mp3"></audio>
+                <p class="is-size-7 mt-2"><em>Fails to detect hesitation; blindly accepts decision.</em></p>
+              </div>
+              <div class="column">
+                <span class="audio-label">EmoS (Ours)</span>
+                <audio controls src="samples/sample1_emos.mp3"></audio>
+                <p class="is-size-7 mt-2"><em>Detects sadness; proposes a buffer strategy.</em></p>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        </div>
+
+      <div class="box">
+        <h3 class="title is-4">Resources & Reproducibility</h3>
+        <p>
+            To uphold anonymity during the review process, the full <strong>EmoDialogue dataset</strong> and <strong>EmoS model checkpoints</strong> are anonymized. 
+            We are committed to releasing all assets (Code, Data, and Models) to the public open-source community upon the acceptance of this paper.
+        </p>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
