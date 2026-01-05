@@ -252,12 +252,11 @@
             display: inline-block;
             background: #e2e8f0;
             color: #475569;
-            font-weight: 800;
-            font-size: 1.2rem;
-            width: 40px;
-            height: 40px;
-            line-height: 40px;
-            border-radius: 50%;
+            font-weight: 700;     /* 稍微细一点 */
+            font-size: 0.9rem;    /* 字体改小一点，适配文字 */
+            padding: 6px 16px;    /* 增加内边距，撑开成胶囊形 */
+            border-radius: 20px;  /* 圆角 */
+            letter-spacing: 0.05em;
         }
 
         .eval-col.ours .score-badge {
@@ -346,7 +345,7 @@
                         <h4 style="display: flex; align-items: center; justify-content: space-between;">
                             Candidate Response
                             <span style="background-color: #334155; color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em;">
-                                True Score: 4.0
+                                True Score: 1.0
                             </span>
                         </h4>
                         <div class="transcript">
@@ -361,7 +360,7 @@
                 <div class="eval-grid">
                     <div class="eval-col">
                         <div class="model-name">Qwen2.5-Omni</div>
-                        <div class="score-display"><span class="score-badge">3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
                             The response provides accurate information regarding the system update time. It is helpful and relevant to the user's query about grades.
@@ -369,7 +368,7 @@
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Qwen3-Omni</div>
-                        <div class="score-display"><span class="score-badge">3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
                             The model correctly identifies the topic. The tone is professional. However, it misses the user's excitement slightly.
@@ -377,7 +376,7 @@
                     </div>
                     <div class="eval-col">
                         <div class="model-name">GPT-4o-Audio</div>
-                        <div class="score-display"><span class="score-badge">2</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
                             The user sounds happy, but the model responds with a generic instruction. It fails to match the user's energy but answers the question logically.
@@ -385,7 +384,7 @@
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Gemini 2.5 Pro</div>
-                        <div class="score-display"><span class="score-badge">2</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
                             The response is factual but cold. It ignores the high arousal in the user's voice.
@@ -393,7 +392,7 @@
                     </div>
                     <div class="eval-col ours">
                         <div class="model-name">EmoS (Ours)</div>
-                        <div class="score-display"><span class="score-badge">1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
                             The user's speech is excited and fast, indicating high arousal/joy. The model completely misses these cues, treating it as a neutral query. It provides a mechanical response that ignores the user's emotional state.
