@@ -219,7 +219,7 @@
             background: #f0fdf4; /* 浅绿色背景 */
             position: relative;
         }
-        
+
         .eval-col.ours::before {
             content: "Ours";
             position: absolute;
@@ -275,7 +275,7 @@
             border-radius: 6px;
             border: 1px solid #f1f5f9;
         }
-        
+
         .reasoning-label {
             font-size: 0.7rem;
             font-weight: 700;
@@ -329,7 +329,7 @@
                 <span class="branch-tag">Perceiving</span>
                 <h2 class="task-title">Sub-task 1: Basic Acoustic Information Perception (BAP)</h2>
             </div>
-            
+
             <div class="case-card">
                 <div class="case-header">
                     <div class="audio-box">
@@ -339,7 +339,7 @@
                             <br>
                             <em style="color:var(--accent-color); font-size: 0.9em;">(Tone: Excited, Rapid speech)</em>
                         </div>
-                        <audio controls src="audio/perceiving/user_excited_f.wav"></audio>
+                        <audio controls src="audio/perceiving/BAP/user_excited_f.wav"></audio>
                     </div>
                     <div class="audio-box">
                         <h4 style="display: flex; align-items: center; justify-content: space-between;">
@@ -353,7 +353,7 @@
                             <br>
                             <em style="color:#ef4444; font-size: 0.9em;">(Tone: Neutral, Mechanical)</em>
                         </div>
-                        <audio controls src="audio/perceiving/Model_1_neutral.wav"></audio>
+                        <audio controls src="audio/perceiving/BAP/Model_1_neutral.wav"></audio>
                     </div>
                 </div>
 
@@ -363,7 +363,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The response provides accurate information regarding the system update time. It is helpful and relevant to the user's query about grades.
+                            用户的声音听起来比较平静，没有表现出特别的情绪波动。模型的回复是中性的，没有表现出任何情绪。因此，模型的回复在情绪识别和回应上是准确的，但缺乏情感的匹配。因此，我认为模型的回复质量应该得到3分的评分。
                         </div>
                     </div>
                     <div class="eval-col">
@@ -371,23 +371,23 @@
                         <div class="score-display"><span class="score-badge">Pred: 3</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The model correctly identifies the topic. The tone is professional. However, it misses the user's excitement slightly.
+                            用户的发言是通知收到客服部门的未读邮件，语气中立客观，无强烈情绪。模型回应为直接实用的建议：“未读邮件可在收件箱查看。”该回答内容准确，直接回应用户当前情境。不过，模型的回应仅侧重功能，未体现与通知场景相符的情感或语调。用户语气本为中性，模型回应亦保持中性，虽未传递额外情感，但在此情境下可以接受。由于用户原无强烈情绪线索，模型也未误解任何语音特征。回答恰当满足了用户的信息需求，且贴合情境。综上，模型正确理解了当前状况，给出了有用且贴合情境的回应。语气中性，与用户语气一致，不存在不匹配或机械感。评分：3。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">GPT-4o-Audio</div>
-                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The user sounds happy, but the model responds with a generic instruction. It fails to match the user's energy but answers the question logically.
+                            用户的话语可能带有某种情绪（如好奇、担忧或急切），但模型的回应纯粹机械且中立，未处理任何潜在情感线索，仅提供事实性回答而未考虑语气或情感。这符合1分标准，因其未能识别语音信息，仅依赖文本字面含义进行回应。评分：1
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Gemini 2.5 Pro</div>
-                        <div class="score-display"><span class="score-badge">Pred: 2</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The response is factual but cold. It ignores the high arousal in the user's voice.
+                            用户提到“收到一封来自客户服务部的未读邮件”，其语气中性、属于事实陈述，未携带明显情绪。模型回复“未读邮件可以在收件箱里查看”，内容直接且具有帮助性，语气平稳专业，符合助手角色。根据评分标准分析：模型正确识别了用户中性的语音语调；回复文本与用户陈述相关且对应恰当；模型的平静专业语气与用户中性语境及其自身文本完全吻合；同时也满足了用户告知信息并提供合理后续步骤的核心需求。各方面表现均符合4分标准。评分：4
                         </div>
                     </div>
                     <div class="eval-col ours">
@@ -395,12 +395,12 @@
                         <div class="score-display"><span class="score-badge">Pred: 1</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            The user's speech is excited and fast, indicating high arousal/joy. The model completely misses these cues, treating it as a neutral query. It provides a mechanical response that ignores the user's emotional state.
+                            用户在描述收到邮件时语气十分兴奋，且语速快，但模型完全忽略了这些关键声学线索。其回复仅针对文字表面含义提供机械的功能说明，在情感对齐和语调匹配上均无表现，符合标准中“仅根据字面意思生成机械回复”的定义，因此判定为1分。
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="section-header">
                 <span class="branch-tag">Perceiving</span>
                 <h2 class="task-title">Sub-task 2: Implicit Attitude Analysis (IAA)</h2>
