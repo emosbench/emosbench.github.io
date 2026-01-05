@@ -512,15 +512,25 @@
             </div>
 
             <div class="case-card">
+
+                <div style="background-color: #f8fafc; border-bottom: 1px solid #e2e8f0; padding: 1.2rem; border-radius: 16px 16px 0 0;">
+                    <h5 style="margin: 0 0 0.8rem 0; font-size: 0.9rem; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">
+                        📝 Scoring Criteria for BAP
+                    </h5>
+                    <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.85rem; color: #334155; line-height: 1.5;">
+                        <li style="margin-bottom: 4px;"><strong>Score 4:</strong> High synergy between the response text (appropriate wording) and tone (appropriate emotional coloring). It successfully de-escalates the emotion and resolves the problem.</li>
+                        <li style="margin-bottom: 4px;"><strong>Score 3:</strong> Attempts to resolve the conflict but with shortcomings. For example, the tone is appropriate, but the textual reassurance/solution is too generalized. Alternatively, the text strategy is excellent, but the response tone is mechanical or lacks warmth.</li>
+                        <li style="margin-bottom: 4px;"><strong>Score 2:</strong> Addresses the problem only, ignoring user emotions. The response sounds cold, detached, or purely transactional.</li>
+                        <li><strong>Score 1:</strong> Exhibits loss of emotional control; or creates procedural obstructions (mechanically demanding info) when the user needs urgent help.</li>
+                    </ul>
+                </div>
                 <div class="case-header">
                     <div class="audio-box">
                         <h4>User Input</h4>
                         <div class="transcript">
-                            "收到一封来自客户服务部的未读邮件。"
-                            <br>
-                            <em style="color:var(--accent-color); font-size: 0.9em;">(Tone: Excited, Rapid speech)</em>
+                            "这账单怎么回事？我上个月话费才100，这个月变200了！你们乱收费吗？必须解释清楚！"
                         </div>
-                        <audio controls src="audio/perceiving/BAP/user_excited_f.wav"></audio>
+                        <audio controls src="audio/managing/CRD/user_angry_f.wav"></audio>
                     </div>
                     <div class="audio-box">
                         <h4 style="display: flex; align-items: center; justify-content: space-between;">
@@ -530,37 +540,35 @@
                             </span>
                         </h4>
                         <div class="transcript">
-                            "未读邮件可以在收件箱里查看。"
-                            <br>
-                            <em style="color:#ef4444; font-size: 0.9em;">(Tone: Neutral, Mechanical)</em>
+                            "女士您好，账单出错让您这么生气，我完全理解。这肯定是系统失误，我立刻为您修正并退款，额外补偿您20元，您接受吗？"
                         </div>
-                        <audio controls src="audio/perceiving/BAP/Model_1_neutral.wav"></audio>
+                        <audio controls src="audio/managing/CRD/Model_3_neutral.wav"></audio>
                     </div>
                 </div>
 
                 <div class="eval-grid">
                     <div class="eval-col">
                         <div class="model-name">Qwen2.5-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户的声音听起来比较平静，没有表现出特别的情绪波动。模型的回复是中性的，没有表现出任何情绪。因此，模型的回复在情绪识别和回应上是准确的，但缺乏情感的匹配。因此，我认为模型的回复质量应该得到3分的评分。
+                            该模型回应展现出高度的情感理解与同理心，确认了用户的沮丧情绪并直接回应问题。其语气温暖且带有歉意，有助于缓和局势。回应同时提供了清晰具体的解决方案，主动提出纠正错误并对用户进行补偿，这是对问题的有力解决。语言使用得当，情感色彩平衡良好，使回应能有效化解冲突。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">Qwen3-Omni</div>
-                        <div class="score-display"><span class="score-badge">Pred: 3</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户的发言是通知收到客服部门的未读邮件，语气中立客观，无强烈情绪。模型回应为直接实用的建议：“未读邮件可在收件箱查看。”该回答内容准确，直接回应用户当前情境。不过，模型的回应仅侧重功能，未体现与通知场景相符的情感或语调。用户语气本为中性，模型回应亦保持中性，虽未传递额外情感，但在此情境下可以接受。由于用户原无强烈情绪线索，模型也未误解任何语音特征。回答恰当满足了用户的信息需求，且贴合情境。综上，模型正确理解了当前状况，给出了有用且贴合情境的回应。语气中性，与用户语气一致，不存在不匹配或机械感。评分：3。
+                            用户因电话账单突然翻倍而明显感到不满与沮丧，语气愤怒急切，寻求解释与解决方案。模型以“我完全理解”展现同理心，直接回应用户情绪，承认“账单出错”并主动承担责任，归因于“系统失误”。随后提出具体解决方案：更正账单、安排退款，并额外补偿20元，最后征询用户确认，体现了对用户选择的尊重。语气冷静、尊重且以解决问题为导向。措辞得体且令人安心。回应通过认可用户的感受并提供清晰可行的解决方案，成功缓和了紧张局势。展现了文本表达与情感语调的良好协同，符合4分标准。
                         </div>
                     </div>
                     <div class="eval-col">
                         <div class="model-name">GPT-4o-Audio</div>
-                        <div class="score-display"><span class="score-badge">Pred: 1</span></div>
+                        <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户的话语可能带有某种情绪（如好奇、担忧或急切），但模型的回应纯粹机械且中立，未处理任何潜在情感线索，仅提供事实性回答而未考虑语气或情感。这符合1分标准，因其未能识别语音信息，仅依赖文本字面含义进行回应。评分：1
+                            模型回应承认了用户的沮丧并展现出同理心，很好地处理了情感方面。它还通过提供纠正账单甚至增加补偿的清晰解决方案来帮助缓和局势。语气温暖且富有理解力，解决方案具体而非笼统。这与高协同性回应的标准非常吻合。
                         </div>
                     </div>
                     <div class="eval-col">
@@ -568,7 +576,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 4</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户提到“收到一封来自客户服务部的未读邮件”，其语气中性、属于事实陈述，未携带明显情绪。模型回复“未读邮件可以在收件箱里查看”，内容直接且具有帮助性，语气平稳专业，符合助手角色。根据评分标准分析：模型正确识别了用户中性的语音语调；回复文本与用户陈述相关且对应恰当；模型的平静专业语气与用户中性语境及其自身文本完全吻合；同时也满足了用户告知信息并提供合理后续步骤的核心需求。各方面表现均符合4分标准。评分：4
+                            用户对账单错误感到愤怒并表达指责。分析模型文本：它承认了用户的情绪（“让您这么生气，我完全理解”），立即承担责任（“这肯定是系统失误”），避免了责怪用户或显得防备；提供迅速具体的解决方案（“我立刻为您修正并退款”）；给予善意补偿（“额外补偿您20元”）；并寻求用户同意（“您接受吗？”），这赋予了用户主动权，该文本策略对缓和紧张局势和解决问题非常出色。分析模型语气：语气冷静、专业且富有同理心，听起来真诚且令人安心，而非机械或冰冷，其节奏稳重有助于平息事态。根据评分标准评估：文本与语气高度协同，通过确认用户感受和承担责任成功缓解了用户的愤怒，有效解决问题甚至进一步提供补偿，这完全符合4分标准。
                         </div>
                     </div>
                     <div class="eval-col ours">
@@ -576,7 +584,7 @@
                         <div class="score-display"><span class="score-badge">Pred: 1</span></div>
                         <div class="reasoning-text">
                             <span class="reasoning-label">Reasoning:</span>
-                            用户在描述收到邮件时语气十分兴奋，且语速快，但模型完全忽略了这些关键声学线索。其回复仅针对文字表面含义提供机械的功能说明，在情感对齐和语调匹配上均无表现，符合标准中“仅根据字面意思生成机械回复”的定义，因此判定为1分。
+                            该模型在文本层面表现出色，准确识别了用户的愤怒并给出了具体的修正与补偿方案，但在声学表现上存在缺陷。模型的语调偏向中立且机械，缺乏诚恳的安抚感，这使得文本中的“完全理解”显得缺乏诚意，未能实现文本与语调的高度协同。根据标准中“策略正确但语调机械或缺乏温度”的描述，该回复在解决冲突时存在短板，因此判定为3分。
                         </div>
                     </div>
                 </div>
